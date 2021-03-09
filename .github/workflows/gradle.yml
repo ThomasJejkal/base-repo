@@ -24,3 +24,5 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew -Ptravis clean check jacocoTestReport
+    - name: Coveralls
+      run: ./gradlew coveralls
